@@ -1,0 +1,24 @@
+course: CA4
+exercise: 2
+date:2018-11-29
+author: Xiangrui Xu, 2367947x
+author: Junpeng Lu, 2419351L
+auther: chen han, 2397450c
+
+Task 1:
+
+The program runs task one correctly and functions as detailed in the assessed exercise 2 decription. The whole program was tested under inputing an array and calculating the sum of the values of the array. The array contains positive and negative numbers.The loadxi command increase the index when the program recevice the current value from the array. Comments are added in the submission to show where additions and changes were made. The test program is based on the model solution used as a tutorial question.
+
+The approach used to solve this problem of adding the loadxi instruction is to create four separate commands. The first command loads the current memory location indexed by pc into ad and increasing the pc. The second command increases the source address a by the ad .The third one sets the register equal to the memory location indexed by ad. The last command increases the value in source address a by 1 every time running the command.
+
+At cycle 47, the first item in the array is loaded into R4 and at the next cycle the alu opcode is set to 1100 (x + 1). This simulates the use of loadxi as the increase is done after the load and the increase did not require a separate instruction. At cycle 62, the instruction (add  R4,R4,R6 ) has executed and the result stored in R4 where the sum was -8 + 26 which is equal to 18(0012). The final result is loaded into the sum register at cycle 191 which based on the data used should be 164 and in hexidecimal this is equal to 00a4.
+
+
+Task 2:
+
+The program runs task two correctly and functions as detailed in the assessed exercise 2 decription. There are three states of process of multiplication, in the first state the program will proceed the multiplication itself, in the second state the program wait for the multiplication to complete, in the third state the program load the results into target register and be prepared for next process of multiplication.
+
+There is no codes in ALU itself to complete the function of multiplication. To address the problem of adding the multiplication function to m1 circuit, we used a while-loop to execute the multiplication process. The idea is quite simple, as the nature of multiplication is add up the same number for several times. So we used the add function which has been implemented in ALU to do the multiplication.
+
+For example, if we want to calculate a*b, we simply proceed the add function of a+a for b times.
+
