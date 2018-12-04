@@ -1,10 +1,3 @@
-course: CA4
-exercise: 2
-date:2018-11-29
-author: Xiangrui Xu, 2367947x
-author: Junpeng Lu, 2419351L
-auther: chen han, 2397450c
-
 Task 1:
 
 The program runs task one correctly and functions as detailed in the assessed exercise 2 decription. The whole program was tested under inputing an array and calculating the sum of the values of the array. The array contains positive and negative numbers.The loadxi command increase the index when the program recevice the current value from the array. Comments are added in the submission to show where additions and changes were made. The test program is based on the model solution used as a tutorial question.
@@ -21,4 +14,3 @@ The program runs task two correctly and functions as detailed in the assessed ex
 There is no codes in ALU itself to complete the function of multiplication. To address the problem of adding the multiplication function to m1 circuit, we used a while-loop to execute the multiplication process. The idea is quite simple, as the nature of multiplication is add up the same number for several times. So we used the add function which has been implemented in ALU to do the multiplication.
 
 For example, if we want to calculate a*b, we simply proceed the add function of a+a for b times.
-
